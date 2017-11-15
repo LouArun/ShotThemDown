@@ -26,7 +26,13 @@ function init()
     ground = new Ground(0xffffff, WIDTH, HEIGHT, 10);
     
     player1 = new Player("player1", 0xffff00, new THREE.Vector2(50, 0), 0);
-    enemy = new Player("enemy", 0xff5b2b, new THREE.Vector2((Math.random()*50)+2), ((Math.random()*50)+2), 0);
+    /*enemies = [];
+    for (i = 0; i < 5; ++i)
+    {
+        enemies.push(new Enemy("enemy" + (x+1), 0xff00ff, new THREE.Vector2(50, 0), 0));
+        scene.add(enemies[x].graphic);
+    }*/
+    enemy = new Player("enemy", 0xff00ff, new THREE.Vector2((Math.random()*50)+2), ((Math.random()*50)+2), 0);
     scene.add(player1.graphic);
     scene.add(enemy.graphic);
     light1 = new Light("sun", 0xffffff, "0,0,340");

@@ -14,5 +14,9 @@ function update()
         player1.decelerate(moveDistance);
 
     player1.move();
+    /*for (var x = 0; x < enemies.length; x++)
+    {
+        enemies[x].move();
+    }*/
     controls.update();
 }
